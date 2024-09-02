@@ -1,0 +1,201 @@
+section {
+    width: 80%; /* Ancho de la sección */
+    margin: 20px auto; /* Centrando la sección horizontalmente */
+    padding: 20px; /* Espacio interno */
+    border: 2px solid #ccc; /* Borde alrededor de la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo del recuadro */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de elevación */
+}
+h1 {
+    color: blue;
+    text-align: center; /* Alineación del texto */
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: double;
+
+}
+p {
+    font-size: 16px; /* Tamaño de fuente */
+    text-align: justify; /* Alineación del texto */
+    text-transform: capitalize; /* Transformación del texto (primera letra de cada palabra en mayúscula) */
+    text-decoration: none; /* Sin decoración de texto */
+}
+
+/* Estilos para el bloque de cita (blockquote) */
+blockquote {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-style: italic;
+    margin: 20px;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.caja {
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Caja destacada con estilos especiales */
+.caja-destacada {
+    border: 4px solid #2238ff;
+    background-color: #3bffef;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+.relativo {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 20px;
+    background-color: #87cefa;
+    margin-bottom: 150px;
+    border: 2px solid #0073e6;
+}
+
+/* Estilo para el contenedor absoluto */
+.absoluto {
+    position: absolute;
+    top: 10px;
+    left: 550px;
+    padding: 10px;
+    background-color: #ffa07a;
+    border: 2px solid #ff4500;
+    color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo global para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo para la sección general */
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media query para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    body {
+        background-color: #333;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .relativo {
+        top: 20px;
+        left: 20px;
+    }
+
+    .absoluto {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* Estilos para el contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para los elementos de la cuadrícula */
+.grid-item {
+    background-color: #111dc4;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de animaciones */
+.animaciones {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Estilos para el div con clase animacion */
+.animacion {
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+/* Cambia el color cuando se hace hover */
+.animacion:hover {
+    background-color: #ff5722;
+}
+
+/* Estilos para el div con clase mover */
+.mover {
+    width: 200px;
+    height: 100px;
+    background-color: #0073e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    position: relative;
+    animation: movimiento 3s infinite linear;
+}
+
+/* Definición de la animación usando @keyframes */
+@keyframes movimiento {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 200px);
+    }
+    100% {
+        left: 0;
+    }
+}
